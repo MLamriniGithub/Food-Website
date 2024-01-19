@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CY Cuisine - Acceuil</title>
+
+	<link rel="stylesheet" type="text/css" href="acceuil.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><!--Image pour barre de recherche-->
+
+</head>
+
+<body>
+	<!-- Date : 13/03/2023  -->
+	<!-- Version : 0.1 -->
+	<!-- Descriptif : Page d'acceuil du site de cuisine -->
+
+	<!-- Barre horizontale : logo connexion -->
+	<div class="head">
+		<ul class="head-menu">
+        	<li class="head-menu-r"><a class="se-connecter" href="connexion/connexion.php"><button class="bouton-connexion">Se Connecter</button></a></li>
+        	<li class="head-menu-r"><a class="deposer-rect" href="#"><button class="bouton-depot-rect">Déposer  une recette</button></a></li>
+		</ul>
+	</div>
+
+
+	<!-- Barre de recherche -->
+	<div class="search-box">
+      <input type="text" name="" class="search-txt" placeholder="Recettes, Ingrédients,..." />
+      <a class="search-btn" href="#">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </a>
+    </div>
+
+	<!-- Logo -->
+	<center><img class="logo-principal" src="images/logo.jpg" alt="logo"></center>
+ 
+
+	<!--Menu principal-->
+    <div class="header">
+		<nav>
+			<ul class="menu">
+				<li class="menu-aperitifs"><a href="submenu/aperitifs/aperitifs.html"><center>APERITIFS</center></a>
+					<ul class="submenu">
+						<li><a href="submenu/aperitifs/Amuse-Bouche/abouche.html">AMUSE-BOUCHE</a></li>
+						<li><a href="submenu/aperitifs/Boissons & Cocktails/boissons.html">BOISSONS & COCKTAILS</a></li>
+						<li><a href="submenu/aperitifs/Cakes Salés/cakes.html">CAKES SALES</a></li>
+						<li><a href="submenu/aperitifs/Feuilletés apéritifs/feuilletée.html">FEUILLETES APERITIFS</a></li>
+						<li><a href="submenu/aperitifs/Verrines Salés/verrines.html">VERRINES SALES</a></li>
+					</ul>
+				</li>
+				<li class="menu-entrees"><a href="submenu/entrees/entrees.html"><center>ENTREES</center></a>
+					<ul class="submenu">
+						<li><a href="submenu/entrees/Entrées chaudes/entreechaude.html">ENTREES CHAUDES</a></li>
+						<li><a href="submenu/entrees/Entrées froides/entreefroide.html">ENTREES FROIDES</a></li>
+						<li><a href="submenu/entrees/Salades/salade.html">SALADES</a></li>
+						<li><a href="submenu/entrees/Soupes/soupe.html">SOUPES</a></li>
+					</ul>
+				</li>
+				<li class="menu-plats"><a href="submenu/plats/plats.html"><center>PLATS</center></a>
+					<ul class="submenu">
+						<li><a href="submenu/plats/submenu-plats/plats_trad/plats_trad.html">PLATS TRADITIONNELS</a></li>
+						<li><a href="submenu/plats/submenu-plats/fast_food/fast_food.html">FAST FOOD</a></li>
+					</ul>
+				</li>
+				<li class="menu-desserts"><a href="submenu/desserts/desserts.html"><center>DESSERTS</center></a>
+					<ul class="submenu">
+						<li><a href="submenu/desserts/submenu-desserts/gateaux/gateaux.html">GATEAUX & BROWNIES</a></li>
+						<li><a href="submenu/desserts/submenu-desserts/tartes/tartes_flans.html">TARTES & FLANS</a></li>
+						<li><a href="submenu/desserts/submenu-desserts/muffins/muffins.html">MUFFINS</a></li>
+					</ul>
+				</li>
+				<li class="menu-favoris"><a href="submenu/favoris/favoris.html"><center>FAVORIS</center></a></li>
+			</ul>
+			
+		</nav>
+	</div>
+
+
+<!-- Image d'accueil avec titre et bouton "Voir plus" -->
+<div class="homepage-image">
+	<img src="images/Salade.png" alt="Image d'accueil">
+	<div class="overlay-text bottom-right-triangle">
+	  <h1>Plus de 350 recettes faciles à faire !</h1>
+	  <a href="acceuil.html" class="voir-plus-btn">Voir plus</a>
+	</div>
+  </div>
+  
+  
+
+<!-- Recettes à la une-->
+<div class="Titre-Recettes">
+	<h2>Recettes à la une :</h2>
+</div>
+    <div class="container">
+        <div class="recettes-categories">
+            <div class="recettes-categorie">
+                <a href="submenu/plats/submenu-plats/fast_food/submenu-fast-food/pizzas/pizza_thon.html" class="recettes-categorie-link">
+                   <img class="recettes-categories-img" src="images/pizza_thon.jpg" alt="image-recettes-categories">
+                    <div class="recettes-categories-intitule">
+                        <h2>Pizza</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="recettes-categorie">
+                <a href="submenu/aperitifs/Amuse-Bouche/abouche2.html" class="recettes-categorie-link">
+                    <img class="recettes-categories-img" src="images/abouche2.jpg" alt="image-recettes-categories">
+                    <div class="recettes-categories-intitule">
+                        <h2>Boulettes</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="recettes-categorie">
+                <a href="submenu/entrees/Entrées chaudes/echaude3.html" class="recettes-categorie-link">
+                    <img class="recettes-categories-img" src="images/echaude3.jpg" alt="image-recettes-categories">
+                    <div class="recettes-categories-intitule">
+                        <h2>Quiche</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="recettes-categorie">
+                <a href="submenu/desserts/submenu-desserts/gateaux/submenu-gateaux/brownies/brownies_sans_noix.html" class="recettes-categorie-link">
+                    <img class="recettes-categories-img" src="images/brownies_sans_noix.jpg" alt="image-recettes-categories">
+                    <div class="recettes-categories-intitule">
+                        <h2>Brownies</h2>
+                    </div>
+                </a>
+            </div>
+
+			<div class="recettes-categorie">
+                <a href="submenu/entrees/Salades/salade1.html" class="recettes-categorie-link">
+                    <img class="recettes-categories-img" src="images/salade1.jpg" alt="image-recettes-categories">
+                    <div class="recettes-categories-intitule">
+                        <h2>Salade</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="recettes-categorie">
+                <a href="submenu/plats/submenu-plats/fast_food/submenu-fast-food/tacos/tacos_poulet.html" class="recettes-categorie-link">
+                    <img class="recettes-categories-img" src="images/tacos_poulet.jpg" alt="image-recettes-categories">
+                    <div class="recettes-categories-intitule">
+                        <h2>Tacos</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Bouton "Voir plus de recettes" -->
+<div class="voir-plus-container">
+    <a href="acceuil.html" class="voir-plus-btn">Voir plus de recettes</a>
+</div>
+
+<!-- Ajout du cadre utilisateur de la semaine -->
+<div class="user-of-the-week">
+	<h2>Utilisateur de la semaine :  Raja !</h2>
+	<img class="user-image" src="images/Raja.jpg" alt="Utilisateur de la semaine">
+</div>
+
+
+
+	<footer>
+
+    </footer>
+</body>
+	
+
+</html>
+
+
+<!--
+
+<button class="custom-btn btn-1">Read More</button>

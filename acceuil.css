@@ -1,0 +1,491 @@
+/* Auteur : Fatoumata Wadiou  */
+/* Date : 13/03/2023  */
+/* Version : 0.1  */
+/* Descriptif : Fichier css mettant en forme la Page d'acceuil (acceuil.html) */
+
+body{
+	font-family: 'Source code pro', Calibri, serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*********************** BARRE HORIZONALE PRINCIPALE **********************/
+
+.head {
+	background-color: rgb(96, 252, 182);
+	position: fixed;
+	width: 100%;
+	height: 80px;
+}
+
+.head-menu-l {
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	padding-right: 20px;
+}
+
+.head-menu-r{
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+	padding-right: 20px;
+}
+
+/*LOGO*/
+.menu-logo {
+	cursor: pointer;
+	height: 50px;
+	border-radius: 50px;
+}
+
+/* Bouton <Connexion>  */
+.bouton-connexion {
+	height: 50px;
+	width: 150px;
+	font-size: 16px;
+	border: none;
+	border-radius: 30px;
+	background-color: #2f3640 /*#24252A*/;
+	color: #fff;
+}
+.bouton-connexion:hover {
+	background-color: black;
+}
+
+/* Bouton <Déposer une recette>  */
+.bouton-depot-rect{
+	height: 50px;
+	width: 200px;
+	font-size: 16px;
+	border: none;
+	border-radius: 30px;
+	background-color: #2f3640;
+	color: #fff;
+}
+.bouton-depot-rect:hover {
+	background-color: black ;
+}
+
+/*Barre de recherche*/
+.search-box {
+	position: fixed;
+	top: 70px;
+	left: 10%;
+	transform: translate(0%, -100%);
+	background: #666666;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+ }
+ .search-box:hover > .search-txt {
+ 	width: 240px;
+ 	padding: 0 6px;
+ }
+.search-box:hover > .search-btn {
+	background: white;
+	color: black;
+}
+.search-btn {
+	color: #eeeeee;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+.search-btn > i {
+	font-size: 20px;
+}
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+	font-weight: bold;
+}
+
+/*********************** LOGO PRINCIPAL **********************/
+
+.logo-principal{
+	margin-top: 80px;
+	width: 400px;
+	padding: 20px;
+}
+
+
+
+
+/*********************** MENU PRINCIPAL **********************/
+
+.header{
+	font-size: 18px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+nav{
+	width: 100%;
+	background-color: whitesmoke;
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: black;
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.submenu{
+	display: none;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*Lorsque l'utilisateur passe la souris sur onglet proncipaux menu*/
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+/*Bordure basse pour les éléments du sous-menu*/
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+/*Style des éléments du sous-menu*/
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 14px;
+	color: #222538;
+	width: 250px;
+}
+.menu-aperitifs:hover{
+	border-top: 5px solid rgb(60,179,113);
+	background-color: RGBa(60, 179, 113, 0.15);
+}
+
+.menu-entrees:hover{
+	border-top: 5px solid rgb(60,179,113);
+	background-color: RGBa(60, 179, 113, 0.15);
+}
+
+.menu-plats:hover{
+	border-top: 5px solid rgb(60,179,113);
+	background-color: RGBa(60, 179, 113, 0.15);
+}
+
+.menu-desserts:hover{
+	border-top: 5px solid rgb(60,179,113);
+	background-color: RGBa(60, 179, 113, 0.15);
+}
+
+.menu-favoris:hover{
+	border-top: 5px solid rgb(60,179,113);
+	background-color: RGBa(60, 179, 113, 0.15);
+}
+
+.menu-aperitifs .submenu{
+	background-color: rgb(60,179,113);
+}
+
+.menu-entrees .submenu{
+	background-color: rgb(60,179,113);
+}
+
+.menu-plats .submenu{
+	background-color: rgb(60,179,113);
+}
+
+.menu-desserts .submenu{
+	background-color: rgb(60,179,113);
+}
+
+.submenu li:hover a{
+	color: #eee;
+	font-weight: bold;
+}
+
+.menu-aperitifs .submenu li:hover{
+	background-color: rgb(60,179,113);
+}
+
+.menu-entrees .submenu li:hover{
+	background-color: rgb(60,179,113);
+}
+
+.menu-plats .submenu li:hover{
+	background-color: rgb(60,179,113);
+}
+
+.menu-desserts .submenu li:hover{
+	background-color: rgb(60,179,113);
+}
+
+.menu-favoris .submenu li:hover{
+	background-color: rgb(60,179,113);
+}
+
+
+
+
+
+
+/*      PLACEMENT ELEMENTS      */
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recettes-categories {
+    width: 83%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recettes-categorie {
+    width: 350px;
+    height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    transition: ease-out 0.2s;
+}
+
+.recettes-categorie:hover {
+    scale: 1.05;
+    transform: translateY(-5%);
+    transition: ease-out 0.5s;
+}
+
+
+.recettes-categorie-link {
+    text-decoration: none;
+    height: 240px;
+}
+
+.recettes-categories-img {
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px 3px rgb(44, 44, 44);
+}
+
+.img-entrees {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(images/pizza_thon.jpg);
+}
+
+.img-plats {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(images/abouche2.jpg);
+}
+
+.img-desserts {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(images/echaude3.jpg);
+}
+
+.img-boissons {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(images/brownies_sans_noix.jpg);
+}
+
+.img-aperitifs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(images/salade1.jpg);
+}
+
+.img-surprenez-moi {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(images/tacos_poulet.jpg);
+}
+
+.recettes-categories-intitule {
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    color: rgb(221, 217, 220);
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.voir-plus-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  margin-top: 150px;
+}
+
+.voir-plus-btn {
+  display: inline-block;
+  background-color: rgb(60,179,113);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.voir-plus-btn:hover {
+  background-color: #45a049;
+}
+
+
+/* Style pour le cadre utilisateur de la semaine */
+.user-of-the-week {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  padding: 10px; 
+  background-color: #ffffff; 
+  border-bottom: 2px solid #ffffff; 
+  margin-top: 250px;
+}
+
+
+.user-of-the-week h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-right: 50px;
+}
+
+.user-image {
+  border-radius: 50%; 
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 200px;
+    background-color: rgb(237, 237, 237);
+}
+
+
+.Titre-Recettes {
+	display: flex; 
+	justify-content: flex-start; 
+	align-items: center; 
+	background-color: #ffffff; 
+	margin-top: 50px; 
+	gap: 20px; 
+}
+
+.Titre-Recettes h2 {
+	margin: 0;
+	padding: 0;
+	padding-left: 150px; 
+	font-size: 3em;
+	font-weight: bold;
+	color: #333;
+}
+
+/* Style pour l'image d'accueil, le titre et le bouton "Voir plus" */
+.homepage-image {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  .homepage-image img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	height: 50%; 
+  }
+  
+  .overlay-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+  .homepage-image:hover .overlay-text {
+	background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .overlay-text h1 {
+	color: white;
+	font-size: 2rem;
+	margin-bottom: 20px;
+  }
+  
+  .voir-plus-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #45a049;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+  .voir-plus-btn:hover {
+	background-color: #45a049;
+  }
+  
